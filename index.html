@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="">
+        <title>Clinica Pa</title>
+        <link rel="shortcur icon" type="./imagenes/x-icon" href="./imagenes/icono.ico">
+        <meta name="description" content="Apollo sipcologico para personas por medio del intenet, consejeria
+        en la vida cotidiana y terapia virtual por medio de video llamadas y chat"/>
+        <meta name="keywords" content="Terapia, psicologia, apollo social, consegeria, problemas, ayuda"/>
+        <link rel="stylesheet" href="./css/inicio.css">
+        <link rel="stylesheet" href="./css/popsesion.css">
+        <link rel="stylesheet" href="./css/footer.css">
+    </head>
+    <body>
+        <!--portada logo y menu-->
+        <section class="caveza">
+            <header>
+                <div class="portada">
+                    <div class="posicionLogo">
+                      <div class="logo">
+                        <img src="./imagenes/pa2.png" alt="Logotipo de Pa clinica virtual" title="Pa clinica virtual">
+                    </div>
+                    <nav class="menu">
+                        <a href="https://www.youtube.com/user/AuronPlay" target="_blank">Videos</a>
+                        <a href="#contacto">Contactanos</a>
+                        <a href="javascript:abrirLogin()">Cesión</a>
+                    </nav>
+
+                    </div>
+                </div>
+            </header>
+        </section>
+        <!--Cierre de espacio portada logo y menu-->
+
+        <!--contenido de la pagina principal-->
+        <div class="Cmaestro">
+                <div class="patito">
+                </div>
+        </div>
+
+        </style>
+        <!--Cierre de espacio del contenido-->
+
+        <!--cajas de login y registro-->
+
+
+        <div class="login" id="loginpop">
+           <div class="displeycentrar">
+                <div class="divLR" id="divL">
+                    <div class="inpusL">
+                        <div class="titBien"><h2>Bienbenido</h2></div>
+                        <div class="conimp" id="correoL">
+                            <div ><label>Correo</label></div>
+                            <input type="email" >
+                        </div>
+
+                        <div class="conimp" id="contraseñaL">
+                            <div><label>Contraseña</label></div>
+                            <input type="password">
+                        </div>
+                    </div>
+                    <div class="boton"><input type="submit" value="Iniciar Sesión"></div>
+                    <div class="linkOlvidemicontraseña"><a href="javascript:olvidemicontraseña()">Olvide mi contraseña</a></div>
+                    <div class="linkR"><a href="javascript:cambiodeLaR()">Registrase</a></div>
+                    <div class="cerrarlogin" id="cerrarlogin">
+                        <a href="javascript:cerrar()"><img src="./imagenes/cancelar.png"></a></div>
+                    </div>
+                <div class="divLR" id="divR">
+                    <div class="topconR">
+                        <div class="conimpR">
+                            <div><label>Nombres</label></div>
+                            <input type="text">
+                        </div>
+                        <div class="conimpR">
+                            <div><label>Apellidos</label></div>
+                            <input type="text">
+                        </div>
+                        <div class="conimpR">
+                            <div><label>Correo</label></div>
+                            <input type="email">
+                        </div>
+                        <div class="conimpR">
+                            <div><label>Contraseña</label></div>
+                            <input type="text">
+                        </div>
+                        <div class="conimpR">
+                            <div class="contrasenasR"><label>Confirmar</label></div>
+                            <div class="contrasenasR"><label>Contraseña</label></div>
+                            <input type="password">
+                        </div>
+                    </div>
+                    <div class="botonAceptar"><input  type="submit" value="Aceptar"></div>
+                    <div class="cerrarlogin" id="cerrarlogin">
+                        <a href="javascript:cerrar2()"><img src="./imagenes/cancelar.png"></a>
+                    </div>
+                </div>
+           </div>
+        </div>
+     <!--cierre de espacio login y registro-->
+     <a name="contacto">
+        <footer>
+            <div clas="contenedorfooter"></div>
+                <div class="footerInfo">
+                    <h3>Informacion y dudas.</h3>
+                </div>
+
+                <div class="divRedes">
+                    <div class="Con">
+                        <a href=""><img src="./imagenes/footer/logoF.png"></a>
+                    </div>
+                    <div class="Con">
+                        <a href=""><img src="./imagenes/footer/logoW.png"></a>
+                    </div>
+                    <div class="Con">
+                        <a href="https://www.youtube.com/user/AuronPlay" target="_blank"><img src="./imagenes/footer/logoY.png"></a>
+                    </div>
+                </div>
+                <div class="contacto"><h3>clinicavirtualpa@gmail.com</h3></div>
+                <div class="contacto"><h3>TEL: +502 7849-0148</h3<></div>
+            </div>
+        </footer>
+    </body>
+<script>
+function abrirLogin(){
+    document.getElementById("loginpop").style.display="block";
+}
+
+
+function cerrar(){
+    document.getElementById("loginpop").style.display="none";
+}
+
+function cerrar2(){
+    document.getElementById("loginpop").style.display="none";
+    document.getElementById("divL").style.display="block";
+    document.getElementById("divR").style.display="none";
+}
+
+
+function cambiodeLaR(){
+    document.getElementById("divL").style.display="none";
+    document.getElementById("divR").style.display="block";
+}
+
+</script>
+</html>
